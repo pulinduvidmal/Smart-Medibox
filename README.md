@@ -58,7 +58,7 @@ Currently, user data persistence across reboots is not implemented due to a dela
 
 ## About the Project
 
-Originating as a semester project for the EN2853 - Embedded Systems & Applications module at UoM, CSE, Smart Medibox aims to blend IoT convenience with healthcare needs, creating a smarter approach to medication management.
+Originating as a semester project for the EN2853 - Embedded Systems & Applications module at UoM Smart Medibox aims to blend IoT convenience with healthcare needs, creating a smarter approach to medication management.
 
 ---
 
