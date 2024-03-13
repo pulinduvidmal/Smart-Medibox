@@ -39,7 +39,7 @@ git clone https://github.com/pulinduvidmal/Smart-Medibox
 For simulation purposes, use the Wokwi-specific branch:
 
 ```bash
-git clone -b Wokwi https://github.com//Smart-Medibox
+https://wokwi.com/projects/390588406511806465
 ```
 
 PlatformIO typically handles library dependencies automatically. Refer to `platform.ini` for manual installations if needed.
