@@ -28,6 +28,10 @@ This project was crafted using PlatformIO with the Arduino Framework, ensuring a
 - PlatformIO with Arduino Framework, set up and ready.
 - Relevant hardware components for hands-on testing (optional for simulation).
 
+### Algorithm
+![Screenshot 2024-03-16 012407](https://github.com/pulinduvidmal/Smart-Medibox/assets/107745680/40df86ac-7b8b-4aec-b0e3-804ca2471bba)
+
+
 ### Getting Started
 
 To clone the repository:
