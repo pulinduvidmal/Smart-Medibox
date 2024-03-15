@@ -1,1 +1,59 @@
-#here is the code
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <WiFi.h>
+
+void setup() {
+
+  dhtSensor.setup(DHTPIN, DHTesp::DHT22);
+
+  // Start serial communication
+  Serial.begin(9600);
+
+
+  if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
+    Serial.println(F("SSD1306 allocation failed"));
+    for ( ;; );
+  }
+
+  display.display();
+  delay(500);
+
+  // Connect to WiFi
+  WiFi.begin("Wokwi-GUEST", "", 6);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(250);
+    display.clearDisplay();
+    print_line("Connecting to WiFi", 0, 0, 2);
+
+  }
+  display.clearDisplay();
+  print_line("Connected to WiFi", 0, 0, 2);
+
+  configTime(UTC_OFFSET, UTC_OFFSET_DST, NTP_SERVER);// Set up time synchronization
+
+  display.clearDisplay();
+
+  
+
+}
+
+
+//update time funtion
+void update_time() {
+  struct tm timeinfo;
+  getLocalTime(&timeinfo);
+
+  //Extract the time and date from the timeinfo
+
+  char timeHour[3];
+  strftime(timeHour, 3, "%H", &timeinfo);
+  hours = atoi(timeHour);
+
+  char timeMinute[3];
+  strftime(timeMinute, 3, "%M", &timeinfo);
+  minutes = atoi(timeMinute);
+
+  char timeSecond[3];
+  strftime(timeSecond, 3, "%S", &timeinfo);
+  seconds = atoi(timeSecond);
