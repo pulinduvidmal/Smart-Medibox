@@ -48,10 +48,6 @@ https://wokwi.com/projects/390588406511806465
 
 PlatformIO typically handles library dependencies automatically. Refer to `platform.ini` for manual installations if needed.
 
-## Known Issues
-
-Currently, user data persistence across reboots is not implemented due to a delay in accessing non-volatile memory immediately after boot-up. This limitation is under investigation for future improvements.
-
 ## About the Project
 
 Originating as a semester project for the EN2853 - Embedded Systems & Applications module at UoM Smart Medibox aims to blend IoT convenience with healthcare needs, creating a smarter approach to medication management.
