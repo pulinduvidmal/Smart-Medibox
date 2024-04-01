@@ -48,14 +48,6 @@ https://wokwi.com/projects/390588406511806465
 
 PlatformIO typically handles library dependencies automatically. Refer to `platform.ini` for manual installations if needed.
 
-### Configuration and Structure
-
-The codebase is organized to facilitate easy navigation and modification:
-
-- **./include directory**: Houses header files like `Constants.h` (constants), `Functions.h` (function declarations), and `Globals.h` (global variables).
-- **main.cpp**: Contains the core `loop()` and `setup()` functions integral to Arduino sketches.
-- The application logic includes functions for updating time, managing alarms, navigating menus, and monitoring environmental conditions.
-
 ## Known Issues
 
 Currently, user data persistence across reboots is not implemented due to a delay in accessing non-volatile memory immediately after boot-up. This limitation is under investigation for future improvements.
