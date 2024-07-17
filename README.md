@@ -15,8 +15,10 @@ The project leverages the following hardware components:
 - **ADAFRUIT SSD 1306 OLED Monochrome Display (128x64)** for crisp, readable output.
 - **ESP32 Devkit V1** as the central processing unit, providing robust performance and connectivity.
 - **DHT11 Temperature and Humidity Sensor** for accurate environmental readings. (Configurable for DHT22.)
+  
+## Demonstration 1
 
-Developed with flexibility in mind, the system supports easy adaptation to alternative components by adjusting parameters accordingly.
+https://github.com/user-attachments/assets/c551988d-0633-4b05-afc1-a97198f92b20
 
 ## Development Environment
 
